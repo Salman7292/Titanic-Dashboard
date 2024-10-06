@@ -24,7 +24,6 @@ data= pd.read_csv("titanic.csv")
 # data=data.dropna()
 
 
-
 # Function to convert an image file to base64 encoding
 def get_img_as_base64(file):
     with open(file, "rb") as f:
@@ -33,11 +32,8 @@ def get_img_as_base64(file):
 
 
 
-# Convert the local images to base64 encoding
-background_img1 = get_img_as_base64("https://raw.githubusercontent.com/Salman7292/Titanic-Dashboard/refs/heads/main/back.jpg")  # Replace with your local image path
-
-
-
+# Convert the local image "HERO.jpg" to base64 encoding
+Background_img = get_img_as_base64("back.jpg")  # Replace with your local image path
 
 def Line_Break(width):
         line_code=f"""
@@ -79,7 +75,7 @@ def heading(heading,color):
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-    background-image: url("data:image/jpeg;base64,{background_img1}");
+    background-image: url("data:image/jpeg;base64,{Background_img}");
 
        
     background-size: 100%;
