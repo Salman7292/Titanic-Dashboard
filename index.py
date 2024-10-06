@@ -34,7 +34,7 @@ def get_img_as_base64(file):
 
 
 # Convert the local images to base64 encoding
-background_img1 = get_img_as_base64("back.jpg")  # Replace with your local image path
+background_img1 = get_img_as_base64("https://raw.githubusercontent.com/Salman7292/Titanic-Dashboard/refs/heads/main/back.jpg")  # Replace with your local image path
 
 
 
