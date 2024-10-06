@@ -33,7 +33,7 @@ def get_img_as_base64(file):
 
 
 # Convert the local image "HERO.jpg" to base64 encoding
-Background_img = get_img_as_base64("back.jpg")  # Replace with your local image path
+Background_img = get_img_as_base64("https://github.com/Salman7292/Titanic-Dashboard/blob/41124ccd240b86b814e7111b37622a181bf0a9fb/back.jpg")  # Replace with your local image path
 
 def Line_Break(width):
         line_code=f"""
